@@ -1,0 +1,152 @@
+.profile-container-main{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(202, 235, 224, 0.482);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-container{
+    width: 500px;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    max-width: 640px;
+    margin-left: 1100px;
+    padding: 40px;
+}
+
+.profile-container form input{
+    width: 450px;
+    font-size: 16px;
+    display: flex;
+    background: white;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.inputs{
+    font-size: 16px;
+}
+
+.form{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h3{
+    margin-bottom: 1.5px;
+    font-weight: normal;
+}
+
+.buttonvoltar{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: -5px;
+    height: 45px;
+    width: 472px;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    background-color: rgb(143, 143, 143);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.buttonvoltar:hover{
+    background: rgb(105, 105, 105);
+    color: white;
+}
+
+.buttoncriar{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: -1px;
+    height: 45px;
+    width: 472px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(80, 197, 127);
+    margin-top: 10;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.buttoncriar:hover{
+    background: rgb(60, 177, 107);
+    color: white;
+}
+
+.actions{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+#create-link{
+    margin: 30px auto 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(min-width: 400px) {
+    .profile-container-main {
+        padding: 840px 5% 0;
+        background-image: url(../Imagens/Sem-Título-2.png);
+    }
+
+    .profile-container {
+
+        max-width: 640px;
+        margin-top: -415px;
+        align-items: flex-start;
+        align-self: flex-end;
+    }    
+}
+
+@media(min-width: 768px) {
+    .profile-container-main {
+        padding: 940px 5% 0;
+        background-image: url(../Imagens/Sem-Título-2.png);
+    }
+
+    .profile-container {
+
+        max-width: 640px;
+        margin-top: -515px;
+        align-items: flex-start;
+        align-self: flex-end;
+    }    
+}
+
+@media(min-width: 1200px) {
+    .profile-container-main {
+        padding: 960px 5% 0;
+        background-image: url(../Imagens/Sem-Título-1.png);
+    }
+
+    .profile-container {
+        max-width: 640px;
+        margin-top: -800px;
+    }
+}

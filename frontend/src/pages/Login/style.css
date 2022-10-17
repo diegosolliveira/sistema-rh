@@ -1,0 +1,151 @@
+.login-main-div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(202, 235, 224, 0.482);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login-div {
+    width: 500px;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    max-width: 640px;
+    margin-left: 1100px;
+    padding: 40px;
+}
+
+.login-div form input{
+    
+    width: 450px;
+    font-size: 16px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.575);
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.caixa{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 180px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.buttonLogar{
+    height: 45px;
+    width: 472px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(143, 143, 143);
+    margin-top: 10;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.buttonLogar:hover{
+    background: rgb(105, 105, 105);
+    color: white;
+}
+
+.linha{
+    margin-top: 25px;
+    margin-left: 15px;
+    height: 1px;
+    width: 435px;
+    background-color: rgba(0, 0, 0, 0.213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonCriar{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    height: 45px;
+    width: 472px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(80, 197, 127);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.buttonCriar:hover{
+    background: rgb(60, 177, 107);
+    color: white;
+}
+
+.actions{
+    margin-bottom: 20px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#create-link{
+    margin: 30px auto 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(min-width: 400px) {
+    .login-main-div {
+        padding: 840px 5% 0;
+        background-image: url(../Imagens/Sem-Título-2.png);
+    }
+
+    .login-div {
+
+        max-width: 640px;
+        margin-top: -415px;
+        align-items: flex-start;
+        align-self: flex-end;
+    }    
+}
+
+@media(min-width: 768px) {
+    .login-main-div {
+        padding: 940px 5% 0;
+        background-image: url(../Imagens/Sem-Título-2.png);
+    }
+
+    .login-div {
+
+        max-width: 640px;
+        margin-top: -515px;
+        align-items: flex-start;
+        align-self: flex-end;
+    }    
+}
+
+@media(min-width: 1200px) {
+    .login-main-div {
+        padding: 960px 5% 0;
+        background-image: url(../Imagens/Sem-Título-1.png);
+    }
+
+    .login-div{
+        max-width: 640px;
+        margin-top: -800px;
+    }
+}
