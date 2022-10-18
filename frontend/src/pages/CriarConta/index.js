@@ -9,7 +9,7 @@ export default function Profile(){
     const initUser={
         name:'',
         email: '',
-        empresa:''
+        senha:''
     }
     const[user,setUser] = useState(initUser);
 
@@ -43,16 +43,16 @@ export default function Profile(){
             <div className="profile-container">
                 <form onSubmit={onSubmit} className="form">
 
-                    <h1>Criar Conta</h1>
+                    <h1>Cadastrar</h1>
 
-                    <h3>Nome:</h3>
+                    <h3>Nome</h3>
                     <input name="name" onChange={onChange} value={user.name}/>
 
-                    <h3>Email:</h3>
+                    <h3>Email</h3>
                     <input type="email" name="email" onChange={onChange} value={user.email}/>
 
-                    <h3>Senha:</h3>
-                    <input type="password" name="password" onChange={onChange} value={user.empresa}/>
+                    <h3>Senha</h3>
+                    <input type="password" name="senha" onChange={onChange} value={user.senha}/>
 
                     <div className="actions">
                         <Link className="buttonvoltar" to={('/')}>Voltar</Link>

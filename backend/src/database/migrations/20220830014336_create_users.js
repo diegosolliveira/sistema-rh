@@ -7,8 +7,7 @@ exports.up = function(knex) {
     table.string('id').primary();
     table.string('name').notNullable();
     table.string('email').notNullable();
-    table.integer('idade');
-    table.string('empresa');
+    table.string('senha');
   })
 };
 

@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import CriarConta from './pages/CriarConta';
 import CriarVaga from './pages/CriarVagas';
 import Login from './pages/Login';
-import Profile from './pages/Profile';
+import Profile from './pages/CriarCandidatos';
 
 export default function Routess(){
     return(

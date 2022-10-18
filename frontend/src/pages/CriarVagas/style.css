@@ -1,9 +1,10 @@
 #user-container h1{
     margin-top: 10px;
-    color: brown;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .user-list{
