@@ -13,26 +13,26 @@ module.exports = {
         return res.json(user);
     },
     async create(req, res) {
-        const {name, email, idade, empresa} = req.body;
+        const {name, email, password} = req.body;
         const id = crypto.randomBytes(4).toString('HEX');
         await connection('users').insert({
             id,
             name,
             email,
-            idade,
-            empresa
+            password
+    
         })
         return res.json({id});
     },
     async update(req, res){
         const {id} = req.params;
-        const {name, email, idade, empresa } = req.body ;  
+        const {name, email, password} = req.body ;  
         await connection('users').where('id', id).update({
             id,
             name,
             email,
-            idade,
-            empresa
+            password
+    
         })
         return res.status(204).send();
     },

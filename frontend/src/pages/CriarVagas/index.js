@@ -1,49 +1,57 @@
-import React,{useState,useEffect} from 'react';
-import api from '../../services/api'; 
-import { Link } from 'react-router-dom';
+import React,{useState,useEffect} from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import api from '../../services/api'
 import './style.css';
 
 export default function CriarVaga(){
-    const [users,setUsers] = useState([]);
-    useEffect(()=>{
-        api.get('users').then(response =>{
-            setUsers(response.data);
-        })
-    },[])
+    const {id} = useParams();
+    const navigate = useNavigate();
+    const initVagas={
+        titulo:'',
+        descricao: ''
+    }
+    const[vaga, setVaga] = useState(initVagas);
 
-    async function handleDelete(id){
-        try{
-            await api.delete(`/users/${id}`)
-            setUsers(users.filter(user=>user.id !== id))
-        }catch(err){
-            alert('Erro ao deletar');
-        }
+    useEffect(()=>{
+       if(id){
+        api.get(`/vagas/${id}`).then(response=>{
+            setVaga(...response.data)
+        })
+       } 
+    });
+
+    function onSubmit(ev){
+        ev.preventDefault();
+        const method = id ? 'put' : 'post';
+        const url = id 
+        ? `/vagas/${id}` 
+        : '/vagas';
+        
+        api[method](url,vaga).then((response)=>{
+            navigate('/')
+        })
+    }
+
+    function onChange(ev){
+        const {name,value} = ev.target;
+        setVaga({...vaga,[name]:value})
     }
 
     return(
-        <div id="user-container">
-            <h1>Lista de usuários</h1>
-            <Link className="button" id='create-link' to={('/create')}>Criar</Link>
-            <ul className="user-list"> 
-                {users.map(user =>(
-                    <li key={user.id}>
-                        <strong>Nome</strong>
-                        <p>{user.name}</p>
-                        <strong>Email</strong>
-                        <p>{user.email}</p>
-                        <strong>Idade</strong>
-                        <p>{user.idade}</p>
-                        <strong>Empresa</strong>
-                        <p>{user.empresa}</p>
+        <div id="profile-container">
+            <h1>Criar Vaga</h1>
+                <form onSubmit={onSubmit} className="form">
+                    <h3>Titulo</h3>
+                    <input name="titulo" onChange={onChange} value={vaga.titulo}/>
 
-                        <div className="actions">
-                            <button className="button" onClick={()=>handleDelete(user.id)} type="submit">Deletar</button>
-                            <Link className="button" to={`/update/${user.id}`}>Acessar</Link>
-                        </div>
-                    </li>
-                    
-                ))}
-            </ul>
+                    <h3>Descrição</h3>
+                    <input name="descricao" onChange={onChange} value={vaga.descricao}/>
+
+                    <div className="actions">
+                        <Link className="button" to={('/vaga')}>Voltar</Link>
+                        <button className="button" type="submit">Salvar</button>
+                    </div>
+                </form>
         </div>
     );
 }

@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import api from '../../services/api'
 import './style.css';
 
-export default function Profile(){
+export default function CriarCandidatos(){
     const {id} = useParams();
     const navigate = useNavigate();
     const initCandidato={
@@ -50,13 +50,13 @@ export default function Profile(){
                     <input name="sobrenome" onChange={onChange} value={candidato.sobrenome}/>
 
                     <h3>Contato</h3>
-                    <input name="contato" onChange={onChange} value={candidato.idade}/>
+                    <input name="contato" onChange={onChange} value={candidato.contato}/>
 
                     <h3>Email</h3>
-                    <input type="email" name="email" onChange={onChange} value={candidato.empresa}/>
+                    <input type="email" name="email" onChange={onChange} value={candidato.email}/>
 
                     <div className="actions">
-                        <Link className="button" to={('/')}>Voltar</Link>
+                        <Link className="button" to={('/candidatos')}>Voltar</Link>
                         <button className="button" type="submit">Salvar</button>
                     </div>
                     

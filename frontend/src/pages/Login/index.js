@@ -21,7 +21,7 @@ export default function Login() {
 
                     <div className='actions'>
 
-                        <Link className="buttonCriar" to={'/createuser'}>Criar conta</Link>
+                        <Link className="buttonCriar" to={'/createaccount'}>Criar conta</Link>
 
                     </div>
 

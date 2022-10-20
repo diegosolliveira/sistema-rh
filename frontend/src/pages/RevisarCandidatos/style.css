@@ -1,35 +1,32 @@
-#profile-container{
-    max-width: 1000px;
-    margin: 20px auto, 0;
-    padding: 0 20px;
-
-}
-
-#profile-container h1{
+#user-container h1{
     margin-top: 10px;
-    color:brown;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#profile-container form input{
-    width: 800px;
-    font-size: 16px;
-    display: flex;
-    background: white;
-    border: 1px solid #999999;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
+.user-list{
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+    list-style: none;
 }
 
-.form{
+.user-list li{
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.user-list li p{
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;
 }
 
 .button{
@@ -41,6 +38,7 @@
     margin-top: 10;
     color: brown;
     font-weight: bold;
+    text-decoration: none;
     font-size: 14px;
     display: flex;
     justify-content: center;
@@ -58,10 +56,5 @@
     justify-content: space-around;
     margin-bottom: 20px;
     padding: 5px;
-}
-
-#create-link{
-    margin: 30px auto 0;
-    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }

@@ -13,24 +13,22 @@ module.exports = {
         return res.json(vaga);
     },
     async create(req, res) {
-        const {titulo, descricao, empresa} = req.body;
+        const {titulo, descricao} = req.body;
         const id = crypto.randomBytes(4).toString('HEX');
         await connection('vagas').insert({
             id,
             titulo,
-            descricao,
-            empresa
+            descricao
         })
         return res.json({id});
     },
     async update(req, res){
         const {id} = req.params;
-        const {titulo, descricao, empresa } = req.body ;  
+        const {titulo, descricao } = req.body ;  
         await connection('vagas').where('id', id).update({
             id,
             titulo,
-            descricao,
-            empresa
+            descricao
         })
         return res.status(204).send();
     },
