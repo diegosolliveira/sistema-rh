@@ -8,7 +8,6 @@ export default function CriarCandidatos(){
     const navigate = useNavigate();
     const initCandidato={
         name:'',
-        sobrenome: '',
         contato: '',
         email:''
     }
@@ -45,9 +44,6 @@ export default function CriarCandidatos(){
                 <form onSubmit={onSubmit} className="form">
                     <h3>Nome</h3>
                     <input name="name" onChange={onChange} value={candidato.name}/>
-
-                    <h3>Sobrenome</h3>
-                    <input name="sobrenome" onChange={onChange} value={candidato.sobrenome}/>
 
                     <h3>Contato</h3>
                     <input name="contato" onChange={onChange} value={candidato.contato}/>

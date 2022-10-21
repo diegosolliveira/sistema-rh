@@ -21,16 +21,14 @@ export default function Candidatos(){
     }
 
     return(
-        <div id="vaga-container">
+        <div id="candidato-container">
             <h1>Candidatos</h1>
             <Link className="button" id='create-link' to={('/createcandidatos')}>Criar</Link>
-            <ul className="vaga-list"> 
+            <ul className="candidato-list"> 
                 {candidatos.map(candidato =>(
                     <li key={candidato.id}>
                         <h3>Nome</h3>
                         <p>{candidato.name}</p>
-                        <h3>Sobrenome</h3>
-                        <p>{candidato.sobrenome}</p>
                         <h3>Contato</h3>
                         <p>{candidato.contato}</p>
                         <h3>Email</h3>
