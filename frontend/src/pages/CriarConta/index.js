@@ -59,7 +59,7 @@ export default function Profile(){
                         
                     </div>
                     
-                    <button className="buttoncriar" type="submit">Criar</button>
+                    <button className="buttoncriar" type="submit">Criar Conta</button>
 
                 </form>
             </div>    
