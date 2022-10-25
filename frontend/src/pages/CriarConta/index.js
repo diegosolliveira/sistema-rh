@@ -45,14 +45,11 @@ export default function Profile(){
 
                     <h1>Cadastrar</h1>
 
-                    <h3>Nome</h3>
-                    <input name="name" onChange={onChange} value={user.name}/>
+                    <input name="name" onChange={onChange} placeholder="Nome" value={user.name}/>
 
-                    <h3>Email</h3>
-                    <input type="email" name="email" onChange={onChange} value={user.email}/>
+                    <input type="email" name="email" onChange={onChange} placeholder="Email" value={user.email}/>
 
-                    <h3>Senha</h3>
-                    <input type="password" name="senha" onChange={onChange} value={user.senha}/>
+                    <input type="password" name="senha" onChange={onChange} placeholder="Senha" value={user.senha}/>
 
                     <div className="actions">
                         <Link className="buttonvoltar" to={('/')}>Voltar</Link>

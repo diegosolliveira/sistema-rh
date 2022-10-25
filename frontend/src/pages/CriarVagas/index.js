@@ -1,57 +1,58 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import api from '../../services/api'
 import './style.css';
 
-export default function CriarVaga(){
-    const {id} = useParams();
+export default function CriarVagas() {
+    const { id } = useParams();
     const navigate = useNavigate();
-    const initVagas={
-        titulo:'',
+    const initVagas = {
+        titulo: '',
         descricao: ''
     }
-    const[vaga, setVaga] = useState(initVagas);
+    const [vaga, setVaga] = useState(initVagas);
 
-    useEffect(()=>{
-       if(id){
-        api.get(`/vagas/${id}`).then(response=>{
-            setVaga(...response.data)
-        })
-       } 
+    useEffect(() => {
+        if (id) {
+            api.get(`/vagas/${id}`).then(response => {
+                setVaga(...response.data)
+            })
+        }
     });
 
-    function onSubmit(ev){
+    function onSubmit(ev) {
         ev.preventDefault();
         const method = id ? 'put' : 'post';
-        const url = id 
-        ? `/vagas/${id}` 
-        : '/vagas';
-        
-        api[method](url,vaga).then((response)=>{
+        const url = id
+            ? `/vagas/${id}`
+            : '/vagas';
+
+        api[method](url, vaga).then((response) => {
             navigate('/')
         })
     }
 
-    function onChange(ev){
-        const {name,value} = ev.target;
-        setVaga({...vaga,[name]:value})
+    function onChange(ev) {
+        const { name, value } = ev.target;
+        setVaga({ ...vaga, [name]: value })
     }
 
-    return(
-        <div id="profile-container">
-            <h1>Criar Vaga</h1>
-                <form onSubmit={onSubmit} className="form">
-                    <h3>Titulo</h3>
-                    <input name="titulo" onChange={onChange} value={vaga.titulo}/>
+    return (
+        <div className="profile-container">
+            <form onSubmit={onSubmit} className="form">
+                <h1>Criar Vaga</h1>
+                
+                <input name="titulo" onChange={onChange} placeholder=" " value={vaga.titulo} />
+                <label>Titulo</label>
 
-                    <h3>Descrição</h3>
-                    <input name="descricao" onChange={onChange} value={vaga.descricao}/>
-
-                    <div className="actions">
-                        <Link className="button" to={('/vaga')}>Voltar</Link>
-                        <button className="button" type="submit">Salvar</button>
-                    </div>
-                </form>
+                <input className="descricao" name="descricao" onChange={onChange} placeholder=" " value={vaga.descricao} />
+                <label>Descrição da vaga</label>
+                
+                <div className="actions">
+                    <Link className="buttoncancelar" to={('/vaga')}>Cancelar</Link>
+                    <button className="buttonsalvar" type="Finalizar">Salvar</button>
+                </div>
+            </form>
         </div>
     );
 }

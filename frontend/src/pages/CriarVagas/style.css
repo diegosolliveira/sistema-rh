@@ -1,66 +1,112 @@
-#profile-container{
+.profile-container {
     max-width: 1000px;
     margin: 20px auto, 0;
     padding: 0 20px;
-
-}
-
-#profile-container h1{
-    margin-top: 10px;
-    color:brown;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-#profile-container form input{
-    width: 800px;
+.profile-container h1 {
+    margin-top: 10px;
+    color: rgb(80, 197, 127);
+    display: flex;
+}
+
+.profile-container form input {
+    width: 470px;
     font-size: 16px;
     display: flex;
+    border-bottom: 2px rgb(80, 197, 127);
+    outline: none;
     background: white;
-    border: 1px solid #999999;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 10px;
     margin-bottom: 20px;
 }
 
-.form{
-    
+.label-float {
+    position: relative;
+    padding-top: 13px;
+}
+
+.label-float input {
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+.form {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
-.button{
-    height: 40px;
-    width: 120px;
-    border: 1px solid brown;
+.buttoncancelar {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-right: 15px;
+    margin-left: -1.2%;
+    height: 45px;
+    width: 237px;
+    border: none;
     border-radius: 5px;
     background: none;
-    margin-top: 10;
-    color: brown;
+    background-color: rgb(143, 143, 143);
+    color: white;
     font-weight: bold;
-    font-size: 14px;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.7px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
 }
 
-.button:hover{
-    background: brown;
+.buttoncancelar:hover {
+    background: rgb(105, 105, 105);
     color: white;
 }
 
-.actions{
+.buttonsalvar {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: -1px;
+    height: 45px;
+    width: 237px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(80, 197, 127);
+    margin-top: 10;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.buttonsalvar:hover {
+    background: rgb(60, 177, 107);
+    color: white;
+}
+
+.actions {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
     padding: 5px;
 }
 
-#create-link{
+#create-link {
     margin: 30px auto 0;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;

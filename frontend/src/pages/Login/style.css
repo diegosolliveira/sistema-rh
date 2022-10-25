@@ -1,171 +1,270 @@
-
 .login-div {
-    background-image: url(data:image/png;base64,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);
-    background-color: #d9d9d937;
+    background-color: #f3f4f8;
+    background-repeat: no-repeat;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial;
-    font-weight: bolder;
+    font-weight: normal;
     color: rgb(53, 53, 53);
     border: none;
     width: 2018px;
-    height: 979px;
-    margin-top: -1%;
-    margin-left: -1%;
+    height: 1017px;
+    margin-top: -3%;
+    margin-left: 0%;
+    margin-bottom: 0;
 }
 
 .login-div form{
-    height: 89%;
-    margin-top: -0.5%;
-    margin-left: 71%;
+    height: 910px;
+    width: 900px;
+    margin-top: 1%;
+    margin-left: -50%;
     padding: 3%;
-    box-shadow: 10px 10px 25px 5px rgba(50, 50, 50, 0.385);
-}
-
-img{
-    height: 85%;
-    margin-top: 2%;
-    margin-left: 6%;
-    display: flex;
-    position: absolute;
-
+    box-shadow: 10px 10px 35px 5px rgba(50, 50, 50, 0.058);
 }
 
 .btfacebook{
-    height: 5%;
-    width: 30%;
+    height: 4.9%;
+    width: 9rem;
     display: flex;
-    border: 1px solid #89B1CB;
-    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.455);
+    border-radius: 7px;
     align-items: center;
     padding-left: 10%;
     background: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
-    color: #89B1CB;
-    margin-left: 2%;
-    margin-top: 7%;
+    color: rgba(0, 0, 0, 0.455);
+    margin-left: 24%;
+    margin-top: 3%;
+    letter-spacing: 0.5px;
 }
 
 #facebook{
-    height: 2.5%;
-    width: 1.3%;
+    height: 55%;
+    width: 1.5rem;
     border-radius: 3px;
-    padding-top: 0%;
     margin-top: 0rem;
-    margin-left: -2.3rem;
+    margin-left: -4.6rem;
     justify-content: center;
     display: flex;
+    padding-right: 0.5rem;
 }
 
 .bttwitter{
-    height: 5%;
-    width: 30%;
+    height: 4.9%;
+    width: 9rem;
     display: flex;
-    border: 1px solid #89B1CB;
+    border: 1px solid rgba(0, 0, 0, 0.455);
     border-radius: 5px;
     align-items: center;
     padding-left: 10%;
     background: none;
     font-size: 16px;
     font-weight: bold;
-    color: #89B1CB;
-    margin-top: -9.1%;
-    margin-left: 67%;
+    color: rgba(0, 0, 0, 0.455);
+    margin-top: -4.99%;
+    margin-left: 60%;
+    letter-spacing: 0.5px;
 }
 
 #twitter{
-    height: 2.3%;
+    height: 55%;
     margin-left: 14.3%;
     padding-top: 0%;
     margin-top: 0rem;
-    margin-left: -2.3rem;
+    margin-left: -4.2rem;
     justify-content: center;
     display: flex;
+    padding-right: 0.5rem;
 }
 
 .btgoogle{
-    height: 5%;
-    width: 30%;
+    height: 4.9%;
+    width: 9rem;
     display: flex;
-    border: 1px solid #89B1CB;
+    border: 1px solid rgba(0, 0, 0, 0.455);
     border-radius: 5px;
     align-items: center;
     padding-left: 10%;
     background: none;
     font-size: 16px;
     font-weight: bold;
-    color: #89B1CB;
-    margin-top: -9.1%;
-    margin-left: 34.3%;
+    color: rgba(0, 0, 0, 0.455);
+    margin-top: -2.68rem;
+    margin-left: 42%;
+    letter-spacing: 0.5px;
 }
 
 #google{
-    height: 2.4%;
-    width: 1.2%;
+    height: 57%;
+    width: 1.4rem;
     padding-top: 0%;
     margin-top: 0rem;
-    margin-left: -2.3rem;
+    margin-left: -4.1rem;
     justify-content: center;
     display: flex;
+    padding-right: 0.5rem;
 }
 
 .btfacebook:hover{
-    background: #7fa5be;
+    background: #774dd0;
     color: white;
     transition: .25s;
+    border: none;
 }
 
 .bttwitter:hover{
-    background: #7fa5be;
+    background: #774dd0;
     color: white;
     transition: .25s;
+    border: none;
 }
 
 .btgoogle:hover{
-    background: #7fa5be;
+    background: #774dd0;
     color: white;
     transition: .25s;
+    border: none;
 }
 
 .login-div form input{
     width: 450px;
-    font-size: 19px;
+    height: 30px;
+    font-size: 18px;
     display: flex;
-    background: rgba(255, 255, 255, 0.575);
-    border: 1px solid #999999;
-    border-radius: 5px;
+    border: 0;
+    border: 1px solid rgba(0, 0, 0, 0.455);
+    border-radius: 7px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-left: 23.7%;
+}
+
+.login-div label {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 3.1%;
+    margin-left: 25%;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    color: rgba(0, 0, 0, 0.369);
+}
+
+.login-div input:focus+label,
+.login-div input:not(:placeholder-shown)+label {
+    font-size: 16px;
+    margin-top: 0.1%;
+    background-color: white;
+    padding: 2px;
+    color: #000000;
+    letter-spacing: 0.4px;
+}
+
+.acessos{
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 1.6%;
+    margin-bottom: 0px;
+    margin-left: 18%;
+    color: #774dd0ca;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.acessos .checkbox{
+    height: 20px;
+    border-radius: 7px;
+    margin-left: -25%;
+    margin-top: 1.5%;
+}
+
+.lembrar{
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 1.5%;
+    margin-left: -23%;
+    letter-spacing: 0.5px;
+}
+
+.logo2{
+    height: 5.4%;
+    display: flex;
+    padding: 10px;
+    margin-left: -35px;
+    margin-top: 2%;
+}
+
+.nomelogo{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: -5.3%;
+    margin-left: 3%;
+    letter-spacing: 0.5px;
+}
+
+h4{
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 23.5%;
+    color: rgba(0, 0, 0, 0.455);
+    letter-spacing: 0.5px;
 }
 
 h3{
-    margin-left: 40%;
-    margin-top: 8%;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 45%;
+    margin-top: 3.5%;
+    font-family: "Roboto";
+    font-weight: normal;
     font-size: 17px;
+    color: rgba(0, 0, 0, 0.455);
+    letter-spacing: 0.5px;
 }
 
-.caixa{
+h1{
+    margin-left: 23.5%;
+    margin-top: 10%;
+}
+
+.logo{
+    height: 75%;
+    margin-left: 58%;
+    margin-top: 7%;
     display: flex;
-    align-items: center;
-    justify-items: center;
-    margin-left: 180px;
-    margin-top: 20px;
-    font-size: 18px;
+    position: absolute;
 }
 
 .buttonLogar{
-    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 55px;
     width: 472px;
     border: none;
-    border-radius: 5px;
-    background: #89B1CB;
-    margin-top: 7%;
-    margin-bottom: 9%;
+    border-radius: 7px;
+    background: #7f56da;
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+    margin-left: 23.7%;
     color: white;
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,34 +272,21 @@ h3{
 }
 
 .buttonLogar:hover{
-    background: #7fa5be;
+    background: #774dd0;
     color: white;
     transition: .25s;
 }
 
-.linha{
-    margin-top: 0%;
-    margin-left: 15px;
-    height: 1px;
-    width: 435px;
-    background-color: rgba(0, 0, 0, 0.213);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .buttonCriar{
-    margin-top: 7%;
-    margin-left: -5px;
-    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 55px;
     width: 472px;
-    border: none;
-    border-radius: 5px;
-    background: rgb(80, 197, 127);
-    color: white;
+    border-radius: 7px;
+    background: rgba(231, 231, 231, 0.618);
+    color: #774dd0;
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.8px;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -209,8 +295,8 @@ h3{
 }
 
 .buttonCriar:hover{
-    background: rgb(60, 177, 107);
-    color: white;
+    background: rgba(231, 231, 231, 0.918);
+    color: #774dd0;
     transition: .25s;
 }
 
