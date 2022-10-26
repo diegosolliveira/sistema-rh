@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import api from '../../services/api'
+import Menu from "../Menu/index.js"
 import './style.css';
 
 export default function CriarCandidatos(){
@@ -39,24 +40,32 @@ export default function CriarCandidatos(){
     }
 
     return(
-        <div id="profile-container">
-            <h1>Cadastrar Candidato</h1>
-                <form onSubmit={onSubmit} className="form">
-                    <h3>Nome</h3>
-                    <input name="name" onChange={onChange} value={candidato.name}/>
+        <div className="vaga-container">
+            <Menu/>
+            <form onSubmit={onSubmit} className="form">
+                <h1 className="tituloaba">Cadastrar Candidato</h1>
+                <h4>Digite os dados para cadastro.</h4>
 
-                    <h3>Contato</h3>
-                    <input name="contato" onChange={onChange} value={candidato.contato}/>
+                <div className='label-float'>
+                    <input name="name" onChange={onChange} placeholder=" " value={candidato.name} />
+                    <label>Nome</label>
+                </div>
 
-                    <h3>Email</h3>
-                    <input type="email" name="email" onChange={onChange} value={candidato.email}/>
-
-                    <div className="actions">
-                        <Link className="button" to={('/candidatos')}>Voltar</Link>
-                        <button className="button" type="submit">Salvar</button>
-                    </div>
-                    
-                </form>
+                <div className="label-float">
+                    <input className="email" name="email" onChange={onChange} placeholder=" " value={candidato.email} />
+                    <label>Email</label>
+                </div>
+               
+                <div className="label-float">
+                    <input className="contato" name="contato" onChange={onChange} placeholder=" " value={candidato.contato} />
+                    <label>Contato</label>
+                </div>
+                
+                <div className="actions">
+                    <Link className="buttoncancelar" to={('/vaga')}>Cancelar</Link>
+                    <button className="buttonsalvar" type="Finalizar">Salvar</button>
+                </div>
+            </form>
         </div>
     );
 }

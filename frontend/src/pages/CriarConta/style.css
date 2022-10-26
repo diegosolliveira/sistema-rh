@@ -1,92 +1,131 @@
-.profile-container-main{
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding-top: 0px;
-    padding-bottom: 945px;
-    border: none;
-    
-}
-
-.profile-container-main::before{
-    display: flex;
-    mask-repeat: no-repeat;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
-
 .profile-container{
-    position: absolute;
+    background-color: #f3f4f8;
+    background-repeat: no-repeat;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-family: Arial;
-    padding: 10% 0% 0% 35%;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-weight: normal;
+    color: rgb(53, 53, 53);
+    border: none;
+    width: 2018px;
+    height: 1017px;
+    margin-top: -3%;
+    margin-left: 0%;
+    margin-bottom: 0;
 }
 
-.form{
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
+.profile-container form{
+    height: 910px;
+    width: 900px;
+    margin-top: 1%;
+    margin-left: -50%;
+    padding: 3%;
+    box-shadow: 10px 10px 35px 5px rgba(50, 50, 50, 0.058);
     
 }
 
 .profile-container form input{
     width: 450px;
+    height: 30px;
     font-size: 18px;
     display: flex;
-    background: white;
-    border: 1px solid #999999;
-    border-radius: 5px;
+    border: 0;
+    border: 1px solid rgba(0, 0, 0, 0.455);
+    border-radius: 7px;
     padding: 10px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-left: 23.7%;    
+}
+
+.profile-container label {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 3.1%;
+    margin-left: 25%;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    color: rgba(0, 0, 0, 0.369);
+}
+
+.profile-container input:focus+label,
+.profile-container input:not(:placeholder-shown)+label {
+    font-size: 16px;
+    margin-top: 0.1%;
+    background-color: white;
+    padding: 2px;
+    color: #000000;
+    letter-spacing: 0.4px;
+}
+
+.logo2{
+    height: 5.4%;
+    display: flex;
+    padding: 10px;
+    margin-left: -35px;
+    margin-top: 2%;
+}
+
+.nomelogo{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: -5.3%;
+    margin-left: 3%;
+    letter-spacing: 0.5px;
+}
+
+h1{
+    color: #000000;
+    margin-left: 23.5%;
+    margin-top: 10%;
 }
 
 .buttonvoltar{
-    margin-top: 5px;
-    margin-bottom: 0px;
-    margin-left: -5px;
-    height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 55px;
     width: 472px;
-    border: none;
-    border-radius: 5px;
-    background: none;
-    background-color: rgb(143, 143, 143);
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+    border-radius: 7px;
+    background: rgba(231, 231, 231, 0.618);
+    color: #774dd0;
     font-size: 18px;
-    letter-spacing: 0.7px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
+    margin-top: 1.5%;
 }
 
 .buttonvoltar:hover{
-    background: rgb(105, 105, 105);
-    color: white;
+    background: rgba(231, 231, 231, 0.918);
+    color: #774dd0;
+    transition: .25s;
 }
 
 .buttoncriar{
-    margin-top: 5px;
-    margin-bottom: 15px;
-    margin-left: -1px;
-    height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 55px;
     width: 472px;
     border: none;
-    border-radius: 5px;
-    background-color: rgb(80, 197, 127);
-    margin-top: 10;
+    border-radius: 7px;
+    background: #7f56da;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 23.7%;
     color: white;
-    font-weight: bold;
     font-size: 18px;
-    letter-spacing: 0.7px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,8 +133,9 @@
 }
 
 .buttoncriar:hover{
-    background: rgb(60, 177, 107);
+    background: #774dd0;
     color: white;
+    transition: .25s;
 }
 
 .actions{
@@ -108,4 +148,72 @@
     margin: 30px auto 0;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+}
+@media (min-width: 800px) {
+    .login-div {
+        background-color: #f3f4f8;
+    }
+
+    .login-div form{
+        height: 910px;
+        width: 900px;
+        margin-top: 1%;
+        margin-left: -50%;
+        padding: 3%;
+        box-shadow: 10px 10px 35px 5px rgba(50, 50, 50, 0.058);
+    }
+
+    .logo{
+        height: 0%;
+        margin-left: 66%;
+        margin-top: 12%;
+        display: flex;
+        position: absolute;
+    }
+}
+
+@media (min-width: 1700px) {
+    .login-div {
+        background-color: #f3f4f8;
+    }
+
+    .login-div form{
+        height: 910px;
+        width: 900px;
+        margin-top: 1%;
+        margin-left: -50%;
+        padding: 3%;
+        box-shadow: 10px 10px 35px 5px rgba(50, 50, 50, 0.058);
+    }
+
+    .logo{
+        height: 68%;
+        margin-left: 62%;
+        margin-top: 11%;
+        display: flex;
+        position: absolute;
+    }
+}
+
+@media (min-width: 1900px) {
+    .login-div {
+        background-color: #f3f4f8;
+    }
+
+    .login-div form{
+        height: 910px;
+        width: 900px;
+        margin-top: 1%;
+        margin-left: -50%;
+        padding: 3%;
+        box-shadow: 10px 10px 35px 5px rgba(50, 50, 50, 0.058);
+    }
+
+    .logo{
+        height: 80%;
+        margin-left: 58%;
+        margin-top: 7%;
+        display: flex;
+        position: absolute;
+    }
 }

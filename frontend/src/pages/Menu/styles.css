@@ -1,0 +1,208 @@
+.login-menu {
+    height: 800px;
+    margin-top: 0.3%;
+    margin-left: -2%;
+    padding: 2%;
+    border-radius: 7px;
+}
+
+.login-menu div {
+    height: 870px;
+    width: 355px;
+    margin-top: -4%;
+    margin-left: -5%;
+    padding: 2%;
+    border-radius: 7px;
+}
+
+.logomenu{
+    height: 5.4%;
+    display: flex;
+    padding: 10px;
+    margin-left: 0px;
+    margin-top: 2%;
+}
+
+.nomelogomenu{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: -13%;
+    margin-left: 18%;
+    letter-spacing: 0.5px;
+}
+
+h5{
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 6%;
+    margin-top: 10%;
+    color: rgba(0, 0, 0, 0.455);
+    letter-spacing: 0.5px;
+}
+
+.overview{
+    height: 7%;
+    width: 370px;
+    display: flex;
+    border: none;
+    align-items: center;
+    padding-left: 10%;
+    background: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 1rem;
+    margin-left: -2%;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+#overviewimg{
+    height: 49%;
+    padding-top: 0%;
+    margin-top: 0rem;
+    margin-left: -0.rem;
+    justify-content: center;
+    display: flex;
+    padding-right: 0.5rem;
+}
+
+.overview:hover{
+    background: rgba(231, 231, 231, 0.400);
+    transition: .25s;
+    border: none;
+}
+
+.candidato{
+    height: 7%;
+    width: 334px;
+    display: flex;
+    border: none;
+    align-items: center;
+    padding-left: 10%;
+    background: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 1.5rem;
+    margin-left: -2%;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+#candidatoimg{
+    height: 49%;
+    padding-top: 0%;
+    margin-top: 0rem;
+    margin-left: -0.4rem;
+    justify-content: center;
+    display: flex;
+    padding-right: 0.5rem;
+}
+
+.candidato:hover{
+    background: rgba(231, 231, 231, 0.400);
+    transition: .25s;
+    border: none;
+}
+
+.revisar{
+    height: 7%;
+    width: 334px;
+    display: flex;
+    border: none;
+    align-items: center;
+    padding-left: 10%;
+    background: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 2rem;
+    margin-left: -2%;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+#revisarimg{
+    height: 51%;
+    padding-top: 0%;
+    margin-top: 0rem;
+    margin-left: -0.3rem;
+    justify-content: center;
+    display: flex;
+    padding-right: 0.5rem;
+}
+
+.revisar:hover{
+    background: rgba(231, 231, 231, 0.400);
+    transition: .25s;
+    border: none;
+}
+
+.vagas{
+    height: 7%;
+    width: 334px;
+    display: flex;
+    border: none;
+    align-items: center;
+    padding-left: 10%;
+    background: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 2rem;
+    margin-left: -2%;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+#vagasimg{
+    height: 51%;
+    padding-top: 0%;
+    margin-top: 0rem;
+    margin-left: -0.3rem;
+    justify-content: center;
+    display: flex;
+    padding-right: 0.5rem;
+}
+
+.vagas:hover{
+    background: rgba(231, 231, 231, 0.400);
+    transition: .25s;
+    border: none;
+}
+
+.configuracao{
+    height: 7%;
+    width: 370px;
+    display: flex;
+    border: none;
+    align-items: center;
+    padding-left: 10%;
+    background: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 1.7rem;
+    margin-left: -2%;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+#configuracaoimg{
+    height: 50%;
+    padding-top: 0%;
+    margin-top: 0rem;
+    margin-left: -0.4rem;
+    justify-content: center;
+    display: flex;
+    padding-right: 0.5rem;
+}
+
+.configuracao:hover{
+    background: rgba(231, 231, 231, 0.400);
+    transition: .25s;
+    border: none;
+}

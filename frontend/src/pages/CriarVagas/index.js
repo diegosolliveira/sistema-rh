@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import Menu from "../Menu/index.js"
 import api from '../../services/api'
 import './style.css';
 
@@ -38,16 +39,23 @@ export default function CriarVagas() {
     }
 
     return (
-        <div className="profile-container">
+        <div className="vaga-container">
+            <Menu/>
             <form onSubmit={onSubmit} className="form">
-                <h1>Criar Vaga</h1>
-                
-                <input name="titulo" onChange={onChange} placeholder=" " value={vaga.titulo} />
-                <label>Titulo</label>
+                <h1 className="tituloaba">Criar Vaga</h1>
+                <h4>Qual vaga gostaria de criar?</h4>
 
-                <input className="descricao" name="descricao" onChange={onChange} placeholder=" " value={vaga.descricao} />
-                <label>Descrição da vaga</label>
-                
+                <div className='label-float'>
+                    <input name="titulo" onChange={onChange} placeholder=" " value={vaga.titulo} />
+                    <label>Titulo</label>
+                </div>
+
+                <div className="label-float">
+                    <input className="descricao" name="descricao" onChange={onChange} placeholder=" " value={vaga.descricao} />
+                    <label>Descrição da vaga</label>
+                </div>
+
+
                 <div className="actions">
                     <Link className="buttoncancelar" to={('/vaga')}>Cancelar</Link>
                     <button className="buttonsalvar" type="Finalizar">Salvar</button>
