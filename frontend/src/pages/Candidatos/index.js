@@ -25,21 +25,20 @@ export default function Candidatos() {
         <div className="vaga-container">
             <Menu />
             <form className="form">
-                <h1 id='candidato'>Candidatos</h1>
+                <h1 className='tituloaba'>Candidatos</h1>
                 <h4>Candidatos cadastrados.</h4>
                 <ul className="candidato-list">
                     {candidatos.map(candidato => (
                         <li key={candidato.id}>
-                            <h3>Nome</h3>
+                            <h3>Nome:</h3>
                             <p>{candidato.name}</p>
-                            <h3>Contato</h3>
+                            <h3>Contato:</h3>
                             <p>{candidato.contato}</p>
-                            <h3>Email</h3>
+                            <h3>Email:</h3>
                             <p>{candidato.email}</p>
 
                             <div className="actions">
                                 <button className="buttoneditar" onClick={() => handleDelete(candidato.id)} type="submit">Deletar</button>
-                                <Link className="buttoneditar" to={`/update/${candidato.id}`}>Editar</Link>
                             </div>
                         </li>
                     ))}

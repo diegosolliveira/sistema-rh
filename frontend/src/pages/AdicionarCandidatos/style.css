@@ -1,0 +1,99 @@
+#formularioDescricao{
+    margin-top: 4%;
+}
+
+.criarLink{
+    height: 14%;
+    width: 18.1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    color: #774dd0;
+    background-color: rgba(231, 231, 231, 0.618);;
+    margin-left: 23.6%;
+    border-radius: 7px;
+    margin-bottom: 3%;
+    border: none;
+    padding: 0.5%;
+}
+
+.criarEmail{
+    height: 14%;
+    width: 18.1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    color: #774dd0;
+    background-color: rgba(231, 231, 231, 0.618);;
+    margin-left: 2%;
+    border-radius: 7px;
+    margin-bottom: 3%;
+    border: none;
+    padding: 0.5%;
+}
+
+.criarLink:hover{
+    background: rgba(231, 231, 231, 0.918);
+        color: #774dd0;
+        transition: .25s;
+        margin-left: 23.5%;
+        margin-right: 0.1%;
+    }
+
+.criarEmail:hover{
+background: rgba(231, 231, 231, 0.918);
+    color: #774dd0;
+    transition: .25s;
+    margin-left: 27.5px;
+}
+
+#linkimg{
+    height: 39%;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10%;
+    margin-left: 40%;
+    display: flex;
+}
+
+#emailimg{
+    height: 37%;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10%;
+    margin-left: 40%;
+    display: flex;
+}
+
+#adcCandidatos{
+    margin-top: 4%;
+}
+
+#inputnome{
+    width: 17%; 
+}
+
+#inputemail{
+    width: 17%;
+    margin-top: -6.2%;
+    margin-left: 43.5%; 
+}
+
+#labelemail{
+    margin-top: -4.2%;
+    margin-left: 44.4%; 
+}
+
+.label-float input:focus + #labelemail,
+.label-float input:not(:placeholder-shown) + #labelemail {
+    font-size: 16px;
+    margin-top: -6%;
+    background-color: white;
+    padding: 2px;
+    color: #000000;
+    letter-spacing: 0.4px;
+}

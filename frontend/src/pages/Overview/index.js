@@ -6,7 +6,7 @@ export default function Overview() {
         <div className="vaga-container">
             <Menu />
             <form className="form">
-                <h1 id='candidato'>Dashboard</h1>
+                <h1 className="tituloaba">Dashboard</h1>
                 <h4>Atividades Recentes.</h4>
                 
             </form>
