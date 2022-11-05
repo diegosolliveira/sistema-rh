@@ -1,14 +1,14 @@
 import Menu from "../Menu/index.js"
 import './style.css';
 
-export default function Overview() {
+export default function Vagas() {
+
     return (
         <div className="vaga-container">
-            <Menu />
+            <Menu/>
             <form className="form">
-                <h1 id='candidato'>Dashboard</h1>
-                <h4>Atividades Recentes.</h4>
-                
+                <h1 className="tituloaba">Vagas</h1>
+                <h4>Vagas criadas.</h4>
             </form>
         </div>
     );

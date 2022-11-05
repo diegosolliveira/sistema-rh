@@ -18,7 +18,7 @@
 .vaga-container form{
     height: 800px;
     width: 1450px;
-    margin-top: 4%;
+    margin-top: 1%;
     margin-left: 0%;
     padding: 2%;
     border-radius: 7px;
@@ -127,6 +127,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
+    text-decoration: none;
 }
 
 .buttonsalvar:hover {

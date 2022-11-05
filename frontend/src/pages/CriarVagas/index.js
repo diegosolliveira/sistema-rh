@@ -58,7 +58,7 @@ export default function CriarVagas() {
 
                 <div className="actions">
                     <Link className="buttoncancelar" to={('/vaga')}>Cancelar</Link>
-                    <button className="buttonsalvar" type="Finalizar">Salvar</button>
+                    <Link className="buttonsalvar" type="Finalizar" to={('/objetivos')}>Proxima Etapa</Link>
                 </div>
             </form>
         </div>

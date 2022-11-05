@@ -1,0 +1,38 @@
+.vaga-container {
+    background-color: #f3f4f8;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-weight: normal;
+    color: rgb(53, 53, 53);
+    border: none;
+    width: 2018px;
+    height: 1017px;
+    margin-top: -3%;
+    margin-left: 0%;
+    margin-bottom: 0;
+}
+
+.vaga-container form{
+    height: 855px;
+    width: 1450px;
+    margin-top: 3.6%;
+    margin-left: 0%;
+    padding: 2%;
+    border-radius: 7px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+#create-link {
+    margin: 30px auto 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
