@@ -29,7 +29,7 @@ export default function CriarVagas() {
             : '/vagas';
 
         api[method](url, vaga).then((response) => {
-            navigate('/')
+            navigate('/objetivos')
         })
     }
 
@@ -57,8 +57,8 @@ export default function CriarVagas() {
 
 
                 <div className="actions">
-                    <Link className="buttoncancelar" to={('/vaga')}>Cancelar</Link>
-                    <Link className="buttonsalvar" type="Finalizar" to={('/objetivos')}>Proxima Etapa</Link>
+                    <Link className="buttoncancelar" to={('/vagas')}>Cancelar</Link>
+                    <button className="buttonsalvar" type="Finalizar">Proxima Etapa</button>
                 </div>
             </form>
         </div>

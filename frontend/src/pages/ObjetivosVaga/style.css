@@ -1,0 +1,106 @@
+.slider{
+    height: 240px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    padding: 2.7%;
+    padding-left: 3.2%;
+    padding-bottom: 3%;
+    padding-right: 1.2%;
+    margin-left: 23.75%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 7px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.15);
+}
+
+.slider1{
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(231, 231, 231, 0.918);
+    width: 10px;
+    height: 2px;
+    border-radius: 7px;
+    outline: none;
+}
+
+.slider h4{
+    
+    font-weight: bold;
+}
+
+#campo{
+    border: none;
+    height: 0px;
+    width: 50%;
+    margin-left: 22%;
+    margin-top: 3%;
+}
+
+.slider1::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+    background: #774dd0;
+    cursor: pointer;
+}
+
+#colaborativo{
+    display: flex;
+    margin-left: 2%;
+    margin-bottom: -5.5%;
+}
+
+#independente{
+    display: flex;
+    margin-left: 80%;
+    margin-top: -5.5%;
+    margin-bottom: 4%;
+}
+
+#reservado{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 3.5%;
+    margin-bottom: -5%;
+}
+
+#sociavel{
+    display: flex;
+    margin-left: 80%;
+    margin-top: -6%;
+    margin-bottom: 5%;
+}
+
+#intenso{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 3.5%;
+    margin-bottom: -5.5%;
+}
+
+#paciente{
+    display: flex;
+    margin-left: 80%;
+    margin-top: -6%;
+    margin-bottom: 5%;
+}
+
+#impulsivo{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 3.5%;
+    margin-bottom: -5.5%;
+}
+
+#vigilante{
+    display: flex;
+    margin-left: 80%;
+    margin-top: -5.7%;
+    margin-bottom: -3.5%;
+}

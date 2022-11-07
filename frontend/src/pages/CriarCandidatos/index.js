@@ -30,7 +30,7 @@ export default function CriarCandidatos(){
         : '/candidatos';
         
         api[method](url,candidato).then((response)=>{
-            navigate('/')
+            navigate('/candidatos')
         })
     }
 

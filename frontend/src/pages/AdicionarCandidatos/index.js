@@ -44,7 +44,7 @@ export default function AdicionarCandidatos() {
                 </div>
 
                 <div className="actions">
-                    <Link className="buttoncancelar" to={('/vaga')}>Cancelar</Link>
+                    <Link className="buttoncancelar" to={('/vagas')}>Cancelar</Link>
                     <button className="buttonsalvar" type="Finalizar">Finalizar</button>
                 </div>
             </form>
