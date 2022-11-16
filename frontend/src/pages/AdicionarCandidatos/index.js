@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import Menu from "../Menu/index.js"
+import Menu from "../../components/Menu/index.js"
 import api from '../../services/api'
 import linklogo from "../Imagens/link.svg"
 import emaillogo from "../Imagens/email.svg"
@@ -42,6 +42,8 @@ export default function AdicionarCandidatos() {
                         <input placeholder=" " id="inputemail" />
                         <label id="labelemail">Email</label>
                 </div>
+
+                
 
                 <div className="actions">
                     <Link className="buttoncancelar" to={('/vagas')}>Cancelar</Link>

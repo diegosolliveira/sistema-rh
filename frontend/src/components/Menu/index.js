@@ -1,15 +1,15 @@
 import React from 'react';
-import Logo from "../Imagens/Logo.png"
-import overviewlogo from "../Imagens/overview.svg"
-import candidatologo from "../Imagens/user.svg"
-import revisarlogo from "../Imagens/folder.svg"
-import vagaslogo from "../Imagens/pessoas.svg"
-import configuracaologo from "../Imagens/configuracoes1.png"
-import perfillogo from "../Imagens/perfil.png"
-import sairlogo from "../Imagens/sair.png"
-import criarvagaslogo from "../Imagens/add.svg"
-import objetivologo from "../Imagens/verificado.png"
-import adicionarcandidatoslogo from "../Imagens/adduser.svg"
+import Logo from "../../pages/Imagens/Logo.png"
+import overviewlogo from "../../pages/Imagens/overview.svg"
+import candidatologo from "../../pages/Imagens/user.svg"
+import revisarlogo from "../../pages/Imagens/folder.svg"
+import vagaslogo from "../../pages/Imagens/pessoas.svg"
+import configuracaologo from "../../pages/Imagens/configuracoes1.png"
+import perfillogo from "../../pages/Imagens/perfil.png"
+import sairlogo from "../../pages/Imagens/sair.png"
+import criarvagaslogo from "../../pages/Imagens/add.svg"
+import objetivologo from "../../pages/Imagens/verificado.png"
+import adicionarcandidatoslogo from "../../pages/Imagens/adduser.svg"
 import './styles.css'
 import { Link } from 'react-router-dom';
 
@@ -33,7 +33,7 @@ export default function Menu() {
                         Cadastrar Candidato
                 </Link>
 
-                <Link className='revisar' to={('/candidatos')}>
+                <Link className='revisar' to={('/revisarcandidatos')}>
                         <img id='revisarimg' src={revisarlogo} alt="" />
                         Revisar Candidatos
                 </Link>

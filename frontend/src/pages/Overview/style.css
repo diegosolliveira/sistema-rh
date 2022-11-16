@@ -1,0 +1,116 @@
+.atividaderecente{
+    height: 240px;
+    width: 400px;
+    border: none;
+    border-top: 15px solid #9a90b1;
+    border-radius: 7px;
+    margin-left: 23.5%;
+    margin-top: 3%;
+    padding: 1%;
+    padding-left: 1%;
+    padding-right: -1%;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.15);
+}
+
+.avaliacoespendentes{
+    height: 240px;
+    width: 400px;
+    border: none;
+    border-top: 15px solid #9a90b1;
+    border-radius: 7px;
+    margin-left: 55.5%;
+    margin-top: -19.6%;
+    padding: 1%;
+    padding-left: 1%;
+    padding-right: -1%;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.15);
+}
+
+.finalizadosrecentemente{
+    height: 240px;
+    width: 865px;
+    border: none;
+    border-top: 15px solid #9a90b1;
+    border-radius: 7px;
+    margin-left: 23.4%;
+    margin-top: 3%;
+    padding: 1%;
+    padding-left: 1%;
+    padding-right: -1%;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.15);
+}
+
+#atividaderecentetitulo{
+    width: 350px;
+    color: #9a90b1;
+    margin-top: 0%;
+    margin-left: 0%;
+    font-size: 22px;
+    text-align: start;
+}
+
+#avaliacoespendentestitulo{
+    width: 350px;
+    color: #9a90b1;
+    margin-top: 0%;
+    margin-left: 0%;
+    font-size: 22px;
+    text-align: start;
+}
+
+#finalizadosrecentementetitulo{
+    width: 350px;
+    color: #9a90b1;
+    margin-top: 0%;
+    margin-left: 0%;
+    font-size: 22px;
+    text-align: start;
+}
+
+.buttonSeeAll{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #9483b6;
+    display: flex;
+    margin-top: 47%;
+    margin-left: 0%;
+    font-weight: bold;
+    border-radius: 4px;
+    letter-spacing: 0.6px; 
+}
+
+.buttonSeeAll:hover{
+  
+    text-decoration: none;
+    color: #9483b6;
+    display: flex;
+    margin-left: 1%;
+    transition: all 0.2s;
+}
+
+.buttonSeeAllFinalizados{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #9483b6;
+    display: flex;
+    margin-top: 22%;
+    margin-left: 0%;
+    font-weight: bold;
+    border-radius: 4px;
+    letter-spacing: 0.6px;
+}
+
+.buttonSeeAllFinalizados:hover{
+  
+    text-decoration: none;
+    color: #9483b6;
+    display: flex;
+    margin-left: 0.5%;
+    transition: all 0.2s;
+}
