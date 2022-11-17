@@ -100,7 +100,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
-    margin-left: -14.4%;
+    margin-left: 23.4%;
 }
 
 .buttoncancelar:hover {
@@ -116,9 +116,9 @@
     border: none;
     border-radius: 7px;
     background: #7f56da;
-    margin-top: 0%;
+    margin-top: -3.8%;
     margin-bottom: 2%;
-    margin-left: -75%;
+    margin-left: 39.1%;
     color: white;
     font-size: 18px;
     font-weight: bold;

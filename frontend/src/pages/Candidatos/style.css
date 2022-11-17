@@ -1,57 +1,56 @@
 .candidato-list {
-    max-width: 1190px;
+    max-width: 1110px;
     list-style: none;
     margin-top: 1%;
     background-color: #ffffff;
-    margin-left: 14%;
+    margin-left: 23.5%;
 }
 
 #titulocandidatos{
+    width: 250px;
     color: #9a90b1;
     margin-top: 3%;
-    margin-left: 14%;
+    margin-left: 23.2%;
+    margin-bottom: 2.3%;
     font-size: 25px;
 }
 
 .VisualizarCandidatos .slider{
-    margin-left: 14%;
+    margin-left: 23.5%;
 }
 
-table{
-    width: 90%;
-    margin: 1%;
-    border-bottom: 1.5px solid rgba(231, 231, 231, 1.18);
-}
-
-thead {
-    font-family: "Roboto";
+#tituloscontainerr{
+    color: rgba(0, 0, 0, 0.6);
     font-weight: normal;
-    font-size: 16px;
+    font-size: 19px;
+    margin: 1%;
+    margin-left: 23.5%;
+    margin-bottom: 1%;
+}
+
+#listandoCandidato{
+    margin: 0%;
+}
+
+h6{
+    font-size: x-large;
+    font-family: "Roboto";
+    font-size: 22px;
+    margin-left: 23.5%;
+    margin-bottom: 1%;
+    margin-top: 3.5%;
     color: rgba(0, 0, 0, 0.455);
     letter-spacing: 0.5px;
-    
 }
 
-th{
-    text-align: start;
-    border-bottom: 1.5px solid rgba(231, 231, 231, 1.18);
-}
-
-td {
-    font-size: 17px;
-    color: rgba(0, 0, 0, 0.700);
-    line-height: 24px;
-    text-align: start;
-    font-family: "Roboto";
-}
-
-.buttoneditar {
+.buttondeletarcandidato {
     font-family: Arial, Helvetica, sans-serif;
-    height: 40px;
-    width: 108px;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    height: 55px;
+    width: 200px;
+    margin-top: 1%;
+    margin-bottom: 2%;
     border-radius: 7px;
+    margin-left: 23.4%;
     border: none;
     background: rgba(231, 231, 231, 0.618);
     color: #774dd0;
@@ -63,26 +62,11 @@ td {
     transition: all 0.2s;
 }
 
-.buttoneditar:hover {
+.buttondeletarcandidato:hover {
     background: rgba(231, 231, 231, 0.918);
     color: #774dd0c8;
     transition: .25s;
     margin-right: 1px;
-}
-
-#status td{
-    height: 25px;
-    width: 90px;
-    border-radius: 5px;
-    text-align: center;
-    background: rgba(227, 57, 57, 0.1);
-    color: rgb(208, 52, 52);
-    font-weight: bold;
-    font-size: 15.5px;
-}
-
-#status{
-    margin-top: 9%;
 }
 
 .actions {

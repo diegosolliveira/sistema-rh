@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
-import Menu from "../Menu/index.js"
+import Menu from "../../components/Menu/index.js"
 import './style.css';
 
 export default function Vagas() {
@@ -46,7 +46,7 @@ export default function Vagas() {
                                 <td>{vaga.descricao}</td>
                                 
                                 
-                                <td><button className="buttoneditar" >Visualizar</button></td>
+                                <td><Link className="buttoneditar" to={('/revisarcandidatos')}>Visualizar</Link></td>
                                 <td><button className="buttoneditar" onClick={() => handleDelete(vaga.id)} type="submit">Deletar</button></td>
 
                             </tr>

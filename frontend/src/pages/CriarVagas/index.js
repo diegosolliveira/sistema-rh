@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import Menu from "../Menu/index.js"
+import Menu from "../../components/Menu/index.js"
 import api from '../../services/api'
 import './style.css';
 
@@ -9,7 +9,11 @@ export default function CriarVagas() {
     const navigate = useNavigate();
     const initVagas = {
         titulo: '',
-        descricao: ''
+        descricao: '',
+        objetivo1: '0',
+        objetivo2: '0',
+        objetivo3: '0',
+        objetivo4: '0'
     }
     const [vaga, setVaga] = useState(initVagas);
 
@@ -20,14 +24,14 @@ export default function CriarVagas() {
             })
         }
     });
-
+    
     function onSubmit(ev) {
         ev.preventDefault();
         const method = id ? 'put' : 'post';
         const url = id
             ? `/vagas/${id}`
             : '/vagas';
-
+            
         api[method](url, vaga).then((response) => {
             navigate('/objetivos')
         })
@@ -37,10 +41,10 @@ export default function CriarVagas() {
         const { name, value } = ev.target;
         setVaga({ ...vaga, [name]: value })
     }
-
+    
     return (
         <div className="vaga-container">
-            <Menu/>
+            <Menu />
             <form onSubmit={onSubmit} className="form">
                 <h1 className="tituloaba">Criar Vaga</h1>
                 <h4>Qual vaga gostaria de criar?</h4>
@@ -54,7 +58,6 @@ export default function CriarVagas() {
                     <input className="descricao" name="descricao" onChange={onChange} placeholder=" " value={vaga.descricao} />
                     <label>Descrição da vaga</label>
                 </div>
-
 
                 <div className="actions">
                     <Link className="buttoncancelar" to={('/vagas')}>Cancelar</Link>
