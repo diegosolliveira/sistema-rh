@@ -51,7 +51,7 @@ export default function Profile() {
                     <img className='logo2' src={Logo} alt="" />
                     <h1 className='nomelogo'>Sistema RH</h1>
                     <h1>Cadastrar</h1>
-                    <h4>Por favor, insira seus dados.</h4>
+                    <h4 id="cadastrolog">Por favor, insira seus dados.</h4>
 
                     <div className='label-float'>
                         <input name="name" onChange={onChange} placeholder=" " value={user.name} />

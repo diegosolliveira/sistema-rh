@@ -12,10 +12,12 @@ export default function CriarCandidatos() {
         contato: '',
         email: '',
         status: 'Pendente',
-        objetivoc1: '',
-        objetivoc2: '',
-        objetivoc3: '',
-        objetivoc4: ''
+        objetivoc1: parseInt(Math.random() * 5),
+        objetivoc2: parseInt(Math.random() * 5),
+        objetivoc3: parseInt(Math.random() * 5),
+        objetivoc4: parseInt(Math.random() * 5),
+        afinidade: parseInt(Math.random() * 10),
+        nota: parseInt(Math.random() * 10)
     }
     const [candidato, setCandidato] = useState(initCandidato);
 
@@ -64,25 +66,6 @@ export default function CriarCandidatos() {
                 <div className="label-float">
                     <input className="contato" name="contato" onChange={onChange} placeholder=" " value={candidato.contato} />
                     <label>Contato</label>
-                </div>
-
-                <h4 id="perfilcompcand">Perfil Comportamental:</h4>
-                <div className="slider">
-                    <h4 id="colaborativo">Colaborativo</h4>
-                    <input name='objetivoc1' className="slider1" id="campo" type="range" min="0" max="4" onChange={onChange} value={candidato.objetivoc1} />
-                    <h4 id="independente">Independente</h4>
-
-                    <h4 id="reservado">Reservado</h4>
-                    <input name='objetivoc2' className="slider1" id="campo" type="range" min="0" max="4" onChange={onChange} value={candidato.objetivoc2} />
-                    <h4 id="sociavel">Sociável</h4>
-
-                    <h4 id="intenso">Intenso</h4>
-                    <input name='objetivoc3' className="slider1" id="campo" type="range" min="0" max="4" onChange={onChange} value={candidato.objetivoc3} />
-                    <h4 id="paciente">Paciente</h4>
-
-                    <h4 id="impulsivo">Impulsivo</h4>
-                    <input name='objetivoc4' className="slider1" id="campo" type="range" min="0" max="4" onChange={onChange} value={candidato.objetivoc4} />
-                    <h4 id="vigilante">Vigilante</h4>
                 </div>
 
                 <div className="actions">

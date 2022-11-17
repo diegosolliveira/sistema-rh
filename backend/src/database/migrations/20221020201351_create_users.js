@@ -9,6 +9,8 @@ exports.up = function (knex) {
     table.string('objetivoc2').notNullable();
     table.string('objetivoc3').notNullable();
     table.string('objetivoc4').notNullable();
+    table.string('afinidade').notNullable();
+    table.string('nota').notNullable();
   })
 };
 

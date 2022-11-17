@@ -8,19 +8,11 @@
     font-weight: normal;
     color: rgb(53, 53, 53);
     border: none;
-    width: 2018px;
-    height: 1017px;
-    margin-top: -3%;
+    width: 100%;
+    height: 100%;
+    margin-top: -1%;
     margin-left: 0%;
-    margin-bottom: 0;
-}
-
-.login-div form{
-    height: 910px;
-    width: 900px;
-    margin-top: 1%;
-    margin-left: -50%;
-    padding: 3%;
+    margin-bottom: 0px;
 }
 
 .btfacebook{
@@ -63,7 +55,7 @@
     font-size: 16px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.455);
-    margin-top: -4.99%;
+    margin-top: -4.55%;
     margin-left: 60%;
     letter-spacing: 0.5px;
 }
@@ -91,7 +83,7 @@
     font-size: 16px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.455);
-    margin-top: -2.77rem;
+    margin-top: -2.58rem;
     margin-left: 42%;
     letter-spacing: 0.5px;
 }
@@ -204,16 +196,16 @@
     height: 5.4%;
     display: flex;
     padding: 10px;
-    margin-left: -35px;
-    margin-top: 2%;
+    margin-left: -10px;
+    margin-top: 0%;
 }
 
 .nomelogo{
     font-family: "Roboto";
     font-weight: bold;
     font-size: 17px;
-    margin-top: -5.3%;
-    margin-left: 3%;
+    margin-top: -5.1%;
+    margin-left: 5%;
     letter-spacing: 0.5px;
 }
 
@@ -221,7 +213,16 @@ h4{
     font-family: "Roboto";
     font-weight: normal;
     font-size: 18px;
-    margin-left: 23.6%;
+    margin-left: 15%;
+    color: rgba(0, 0, 0, 0.455);
+    letter-spacing: 0.5px;
+}
+
+#login{
+    font-family: "Roboto";
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 23.5%;
     color: rgba(0, 0, 0, 0.455);
     letter-spacing: 0.5px;
 }
@@ -332,10 +333,11 @@ h1{
     }
 
     .login-div form{
-        height: 910px;
+        height: 864px;
         width: 900px;
-        margin-top: 1%;
-        margin-left: -50%;
+        margin-top: -1%;
+        margin-left: -1%;
+        margin-bottom: 0%;
         padding: 3%;
         box-shadow: 10px 10px 35px 5px rgba(50, 50, 50, 0.058);
     }
@@ -355,10 +357,11 @@ h1{
     }
 
     .login-div form{
-        height: 910px;
+        height: 834px;
         width: 900px;
-        margin-top: 1%;
-        margin-left: -50%;
+        margin-top: -1%;
+        margin-left: -46%;
+        margin-bottom: 0%;
         padding: 3%;
         box-shadow: 10px 10px 35px 5px rgba(50, 50, 50, 0.058);
     }
@@ -378,10 +381,11 @@ h1{
     }
 
     .login-div form{
-        height: 910px;
+        height: 836px;
         width: 900px;
-        margin-top: 1%;
+        margin-top: -0.5%;
         margin-left: -50%;
+        margin-bottom: 0%;
         padding: 3%;
         box-shadow: 10px 10px 35px 5px rgba(50, 50, 50, 0.058);
     }

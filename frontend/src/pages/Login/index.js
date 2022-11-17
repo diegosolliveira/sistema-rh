@@ -20,7 +20,7 @@ export default function Login() {
                     <img className='logo2' src={Logo} alt="" />
                     <h1 className='nomelogo'>Sistema RH</h1>
                     <h1>Login</h1>
-                    <h4>Bem-vindo! Por favor, insira seus dados.</h4>
+                    <h4 id='login'>Bem-vindo! Por favor, insira seus dados.</h4>
 
                     <div className='label-float'>
                         <input type="email" name="email" placeholder=" " />

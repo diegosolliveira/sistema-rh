@@ -25,7 +25,7 @@ export default function AdicionarCandidatos() {
                     Criar email
                 </button>
 
-                <h4>Digite os emails separados por vírgula:</h4>
+                <h4 id="adcEmails">Digite os emails separados por vírgula:</h4>
                 <div className='label-float'>
                         <input placeholder=" " />
                         <label>Emails</label>

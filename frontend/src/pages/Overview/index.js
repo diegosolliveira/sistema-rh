@@ -12,17 +12,17 @@ export default function Overview() {
 
                 <div className="atividaderecente">
                     <h2 id="atividaderecentetitulo">Atividade Recente: Vagas</h2>
-                    <Link className="buttonSeeAll">VER TODAS</Link>
+                    <Link className="buttonSeeAll" to={'/vagas'}>VER TODAS</Link>
                 </div>
 
                 <div className="avaliacoespendentes">
                     <h2 id="avaliacoespendentestitulo">Avaliações Pendentes</h2>
-                    <Link className="buttonSeeAll">VER TODAS</Link>
+                    <Link className="buttonSeeAll" to={'/revisarcandidatos'}>VER TODAS</Link>
                 </div>
 
                 <div className="finalizadosrecentemente">
                     <h2 id="finalizadosrecentementetitulo">Finalizados Recentemente</h2>
-                    <Link className="buttonSeeAllFinalizados">VER TODAS</Link>
+                    <Link className="buttonSeeAllFinalizados" to={'/revisarcandidatos'}>VER TODAS</Link>
                 </div>
                 
             </form>

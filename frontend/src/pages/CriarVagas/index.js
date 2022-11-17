@@ -47,7 +47,7 @@ export default function CriarVagas() {
             <Menu />
             <form onSubmit={onSubmit} className="form">
                 <h1 className="tituloaba">Criar Vaga</h1>
-                <h4>Qual vaga gostaria de criar?</h4>
+                <h4 >Qual vaga gostaria de criar?</h4>
 
                 <div className='label-float'>
                     <input name="titulo" onChange={onChange} placeholder=" " value={vaga.titulo} />

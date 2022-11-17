@@ -3,20 +3,20 @@
     list-style: none;
     margin-top: 1%;
     background-color: #ffffff;
-    margin-left: 23.5%;
+    margin-left: 15.5%;
 }
 
 #titulocandidatos{
     width: 250px;
     color: #9a90b1;
     margin-top: 3%;
-    margin-left: 23.2%;
+    margin-left: 15%;
     margin-bottom: 2.3%;
     font-size: 25px;
 }
 
 .VisualizarCandidatos .slider{
-    margin-left: 23.5%;
+    margin-left: 15%;
 }
 
 #tituloscontainerr{
@@ -24,7 +24,7 @@
     font-weight: normal;
     font-size: 19px;
     margin: 1%;
-    margin-left: 23.5%;
+    margin-left: 15%;
     margin-bottom: 1%;
 }
 
@@ -36,7 +36,7 @@ h6{
     font-size: x-large;
     font-family: "Roboto";
     font-size: 22px;
-    margin-left: 23.5%;
+    margin-left: 15%;
     margin-bottom: 1%;
     margin-top: 3.5%;
     color: rgba(0, 0, 0, 0.455);
@@ -50,7 +50,7 @@ h6{
     margin-top: 1%;
     margin-bottom: 2%;
     border-radius: 7px;
-    margin-left: 23.4%;
+    margin-left: 14.8%;
     border: none;
     background: rgba(231, 231, 231, 0.618);
     color: #774dd0;

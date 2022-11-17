@@ -130,8 +130,8 @@ export default function Candidatos() {
                                 <div id='status'>
                                     <td>{candidato.status}</td>
                                 </div>
-                                <td>5</td>
-                                <td>10</td>
+                                <td>{candidato.afinidade}</td>
+                                <td>{candidato.nota}</td>
 
                                 <td><Link name='status' className="buttoneditar" to={`/revisarcandidatos/${candidato.id}`} onClick={onClick} value={candidato.status}>Sim</Link></td>
                                 <td><Link className="buttoneditar" to={`/candidatos/${candidato.id}`}>Visualizar</Link></td>

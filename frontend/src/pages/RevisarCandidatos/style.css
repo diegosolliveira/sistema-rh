@@ -3,33 +3,35 @@
     list-style: none;
     margin-top: 1%;
     background-color: #ffffff;
-    margin-left: 22%;
+    margin-left: 15%;
 }
 
 #titulocandidatos{
     width: 250px;
     color: #9a90b1;
     margin-top: 3%;
-    margin-left: 23.6%;
+    margin-left: 15%;
     font-size: 25px;
 }
 
 #titulovaga2{
     width: 250px;
     color: #1b827b83;
-    margin-top: -4.24%;
-    margin-left: 28.5%;
+    margin-top: -4.4%;
+    margin-left: 20%;
     font-size: 25px;
 }
 
 .VisualizarCandidatos .slider{
-    margin-left: 23.5%;
+    margin-left: 15%;
+    margin-top: 1.8%;
 }
 
 table{
     width: 80%;
     margin: 1%;
     border-bottom: 1.5px solid rgba(231, 231, 231, 1.18);
+
 }
 
 thead {
@@ -105,7 +107,7 @@ td {
     padding-left: 3.2%;
     padding-bottom: 3%;
     padding-right: 1.2%;
-    margin-left: 23.75%;
+    margin-left: 15%;
     margin-bottom: -8.7%;
     margin-top: 6%;
     box-shadow: none;
@@ -124,9 +126,9 @@ td {
 #campo2{
     border: none;
     height: 0px;
-    width: 50%;
+    width: 50.1%;
     margin-left: 21.1%;
-    margin-top: 5%;
+    margin-top: 5.16%;
     background-color: none;
 }
 

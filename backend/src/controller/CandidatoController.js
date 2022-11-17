@@ -5,7 +5,7 @@ const { routes } = require('../routes');
 module.exports = {
     
     async create(req, res) {
-        const { name, contato, email, status, objetivoc1, objetivoc2, objetivoc3, objetivoc4 } = req.body;
+        const { name, contato, email, status, objetivoc1, objetivoc2, objetivoc3, objetivoc4, afinidade, nota } = req.body;
         const id = crypto.randomBytes(4).toString('HEX');
         await connection('candidatos').insert({
             id,
@@ -16,7 +16,9 @@ module.exports = {
             objetivoc1,
             objetivoc2,
             objetivoc3,
-            objetivoc4
+            objetivoc4,
+            afinidade,
+            nota
         })
         return res.json({id});
     },
@@ -34,7 +36,7 @@ module.exports = {
 
     async update(req, res){
         const {id} = req.params;
-        const { name, contato, email, status, objetivoc1, objetivoc2, objetivoc3, objetivoc4 } = req.body ;  
+        const { name, contato, email, status, objetivoc1, objetivoc2, objetivoc3, objetivoc4, afinidade, nota } = req.body ;  
         await connection('candidatos').where('id', id).update({
             id,
             name,
@@ -44,7 +46,9 @@ module.exports = {
             objetivoc1,
             objetivoc2,
             objetivoc3,
-            objetivoc4
+            objetivoc4,
+            afinidade,
+            nota
         })
         return res.status(204).send();
     },
