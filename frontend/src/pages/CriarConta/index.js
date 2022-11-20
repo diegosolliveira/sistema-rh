@@ -6,6 +6,7 @@ import api from '../../services/api'
 import './style.css';
 
 export default function Profile() {
+        
     const { id } = useParams();
     const navigate = useNavigate();
     const initUser = {
@@ -25,12 +26,7 @@ export default function Profile() {
 
     function onSubmit(ev) {
         ev.preventDefault();
-        const method = id ? 'put' : 'post';
-        const url = id
-            ? `/users/${id}`
-            : '/users';
-
-        api[method](url, user).then((response) => {
+        api.post('/users', user).then((response) => {
             navigate('/')
         })
     }

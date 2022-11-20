@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Menu from "../../components/Menu/index.js"
 import './style.css';
 
@@ -8,13 +8,13 @@ export default function Candidatos() {
 
     const { id } = useParams();
     const navigate = useNavigate();
-    const [vagas, setVagas] = useState([]);
+    const [vagas] = useState([]);
 
     const initCandidato = {
         name: '',
         contato: '',
         email: '',
-        status: 'Pendente',
+        status: '',
         objetivoc1: '',
         objetivoc2: '',
         objetivoc3: '',
@@ -46,7 +46,7 @@ export default function Candidatos() {
             : '/candidatos';
 
         api[method](url, candidato).then((response) => {
-            navigate('/candidatos')
+            navigate('/revisarcandidatos')
         })
     }
 
@@ -57,6 +57,11 @@ export default function Candidatos() {
         } catch (err) {
             alert('Erro ao deletar');
         }
+    }
+
+    function onChange(ev) {
+        const { name, value } = ev.target;
+        setCandidato({ ...candidato, [name]: value })
     }
 
     return (

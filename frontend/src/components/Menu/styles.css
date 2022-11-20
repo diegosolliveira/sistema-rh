@@ -44,6 +44,20 @@ h5{
     letter-spacing: 0.5px;
 }
 
+#usuarionome{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.555);
+    margin-left: 25%;
+    margin-top: -25%;
+    margin-bottom: 26%;
+}
+
+#usuario{
+    margin-left: 25%;
+    margin-top: -25%;
+    margin-bottom: 26%;
+}
+
 .overview{
     height: 5.6%;
     width: 370px;
@@ -348,7 +362,7 @@ h5{
 
 .sair{
     height: 5.5%;
-    width: 282px;
+    width: 315px;
     display: flex;
     border: none;
     border-radius: 7px;
@@ -358,7 +372,7 @@ h5{
     font-size: 17px;
     font-weight: bold;
     color: #774dd0;
-    margin-top: -1rem;
+    margin-top: -4.5rem;
     margin-left: 5%;
     letter-spacing: 0.5px;
     text-decoration: none;

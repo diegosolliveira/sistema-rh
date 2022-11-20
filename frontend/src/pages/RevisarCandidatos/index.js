@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
-import { Link, useNavigate, useParams} from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import Menu from "../../components/Menu/index.js"
 import './style.css';
 
 export default function Candidatos() {
-    
+
     const { id } = useParams();
     const navigate = useNavigate();
 
@@ -13,7 +13,7 @@ export default function Candidatos() {
         name: '',
         contato: '',
         email: '',
-        status: 'Feito',
+        status: '',
         objetivoc1: '',
         objetivoc2: '',
         objetivoc3: '',
@@ -31,7 +31,7 @@ export default function Candidatos() {
             })
         }
     });
-    
+
     useEffect(() => {
         api.get('candidatos').then(response => {
             setCandidatos(response.data);
@@ -54,11 +54,6 @@ export default function Candidatos() {
         api[method](url, candidato).then((response) => {
             navigate('/candidatos')
         })
-    }
-
-    function onClick(ev) {
-        const { name, value } = ev.target;
-        setCandidato({ ...candidato, [name]: value })
     }
 
     return (
@@ -127,13 +122,13 @@ export default function Candidatos() {
                                 <td>{candidato.name}</td>
                                 <td>{candidato.contato}</td>
                                 <td>{candidato.email}</td>
-                                <div id='status'>
+                                <div id={candidato.status}>
                                     <td>{candidato.status}</td>
                                 </div>
                                 <td>{candidato.afinidade}</td>
                                 <td>{candidato.nota}</td>
 
-                                <td><Link name='status' className="buttoneditar" to={`/revisarcandidatos/${candidato.id}`} onClick={onClick} value={candidato.status}>Sim</Link></td>
+                                <td><Link name='status' type="Finalizar" className="buttoneditar" to={`/candidatos/${candidato.id}`}>Sim</Link></td>
                                 <td><Link className="buttoneditar" to={`/candidatos/${candidato.id}`}>Visualizar</Link></td>
 
                             </tr>

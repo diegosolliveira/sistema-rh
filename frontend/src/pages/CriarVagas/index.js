@@ -24,14 +24,14 @@ export default function CriarVagas() {
             })
         }
     });
-    
+
     function onSubmit(ev) {
         ev.preventDefault();
         const method = id ? 'put' : 'post';
         const url = id
             ? `/vagas/${id}`
             : '/vagas';
-            
+
         api[method](url, vaga).then((response) => {
             navigate('/objetivos')
         })
@@ -41,7 +41,7 @@ export default function CriarVagas() {
         const { name, value } = ev.target;
         setVaga({ ...vaga, [name]: value })
     }
-    
+
     return (
         <div className="vaga-container">
             <Menu />

@@ -33,11 +33,10 @@ export default function CriarCandidatos() {
         ev.preventDefault();
         const method = id ? 'put' : 'post';
         const url = id
-            ? `/candidatos/${id}`
-            : '/candidatos';
-
+            ? `/candidatos/${id}` : '/candidatos';
+        
         api[method](url, candidato).then((response) => {
-            navigate('/candidatos')
+            navigate('/revisarcandidatos')
         })
     }
 
@@ -69,7 +68,7 @@ export default function CriarCandidatos() {
                 </div>
 
                 <div className="actions">
-                    <Link className="buttoncancelar" to={('/candidatos')}>Cancelar</Link>
+                    <Link className="buttoncancelar" to={('/revisarcandidatos')}>Cancelar</Link>
                     <button className="buttonsalvar" type="Finalizar">Salvar</button>
                 </div>
             </form>
