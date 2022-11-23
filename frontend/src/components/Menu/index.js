@@ -83,13 +83,12 @@ export default function Menu() {
                                 <hr></hr>
 
                                 <h5 className='perfilusuario'>Perfil</h5>
+                                <h5 id='usuarionome'>{nome}</h5>
+                                <h5 id='usuario'>{email}</h5>
 
                                 <button className='perfil'>
                                         <img id='perfilimg' src={perfillogo} alt="" />
                                 </button>
-
-                                <h5 id='usuarionome'>{nome}</h5>
-                                <h5 id='usuario'>{email}</h5>
 
                                 <button className='sair' type='button' onClick={handleLogout}>
                                         <img id='sairimg' src={sairlogo} alt="" />

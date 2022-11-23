@@ -1,85 +1,94 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { FormActions, useForm, FormProvider } from "../../context/FormContext.tsx";
 import Menu from "../../components/Menu/index.js"
-import api from '../../services/api'
 import './style.css';
 export default function Objetivos() {
 
-    const [vagas, setVagas] = useState([]);
-    useEffect(() => {
-        api.get('vagas').then(response => {
-            setVagas(response.data);
-        })
-    }, [])
-
-    const { id } = useParams();
+    const { state, dispatch } = useForm();
     const navigate = useNavigate();
-    const initVagas = {
-        titulo: '',
-        descricao: '',
-        objetivo1: '',
-        objetivo2: '',
-        objetivo3: '',
-        objetivo4: ''
-    }
-    const [vaga, setVaga] = useState(initVagas);
 
     useEffect(() => {
-        if (id) {
-            api.get(`/vagas/${id}`).then(response => {
-                setVaga(...response.data)
-            })
+        if (state.titulo === '') {
+            navigate('/createvagas')
+        } else {
+            dispatch({
+                type: FormActions.setCurrentStep,
+                payload: 2
+            });
         }
-    });
-    
-    function onSubmit(ev) {
-        ev.preventDefault();
-        const method = id ? 'put' : 'post';
-        const url = id
-            ? `/vagas/${id}`
-            : '/vagas';
-            
-        api[method](url, vaga).then((response) => {
-            navigate('/objetivos')
+    }, []);
+
+    function handleNextStep() {
+        if (state.objetivo1 !== '' && state.objetivo2 !== '' && state.objetivo3 !== '' && state.objetivo4 !== '') {
+            navigate('/adicionarcandidatos')
+        }
+        else {
+            alert("Defina todos os objetivos da vaga!")
+        }
+    }
+
+    function handleObjetivo1Change(e) {
+        dispatch({
+            type: FormActions.setObjetivo1,
+            payload: e.target.value
         })
     }
 
-    function onChange(ev) {
-        const { name, value } = ev.target;
-        setVaga({ ...vaga, [name]: value })
+    function handleObjetivo2Change(e) {
+        dispatch({
+            type: FormActions.setObjetivo2,
+            payload: e.target.value
+        })
+    }
+
+    function handleObjetivo3Change(e) {
+        dispatch({
+            type: FormActions.setObjetivo3,
+            payload: e.target.value
+        })
+    }
+
+    function handleObjetivo4Change(e) {
+        dispatch({
+            type: FormActions.setObjetivo4,
+            payload: e.target.value
+        })
     }
 
     return (
-        <div className="vaga-container">
-            <Menu />
-            <form onSubmit={onSubmit} className="form">
-                <h1 className="tituloaba">Objetivos da Vaga</h1>
-                <h4>Defina quais os objetivos necessários para a vaga.</h4>
+        <FormProvider>
+            <div className="vaga-container">
+                <Menu />
+                <form className="form">
+                    <h1 className="tituloaba">Objetivos para vaga de {state.titulo}</h1>
+                    <h4>Defina quais os aspectos necessários para a vaga.</h4>
 
-                <div className="slider" >
-                    <h4 id="colaborativo">Colaborativo</h4>
-                    <input name='objetivo1' className="slider1" id="campo" type="range" min="0" max="4" onChange={onChange} value={vagas.objetivo1} />
-                    <h4 id="independente">Independente</h4>
+                    <div className="slider" >
+                        <h4 id="colaborativo">Colaborativo</h4>
+                        <input name='objetivo1' className="slider1" id="campo" type="range" min="0" max="4" onChange={handleObjetivo1Change} value={state.objetivo1} />
+                        <h4 id="independente">Independente</h4>
 
-                    <h4 id="reservado">Reservado</h4>
-                    <input name='objetivo2' className="slider1" id="campo" type="range" min="0" max="4" onChange={onChange} value={vagas.objetivo2} />
-                    <h4 id="sociavel">Sociável</h4>
+                        <h4 id="reservado">Reservado</h4>
+                        <input name='objetivo2' className="slider1" id="campo" type="range" min="0" max="4" onChange={handleObjetivo2Change} value={state.objetivo2} />
+                        <h4 id="sociavel">Sociável</h4>
 
-                    <h4 id="intenso">Intenso</h4>
-                    <input name='objetivo3' className="slider1" id="campo" type="range" min="0" max="4" onChange={onChange} value={vagas.objetivo3} />
-                    <h4 id="paciente">Paciente</h4>
+                        <h4 id="intenso">Intenso</h4>
+                        <input name='objetivo3' className="slider1" id="campo" type="range" min="0" max="4" onChange={handleObjetivo3Change} value={state.objetivo3} />
+                        <h4 id="paciente">Paciente</h4>
 
-                    <h4 id="impulsivo">Impulsivo</h4>
-                    <input name='objetivo4' className="slider1" id="campo" type="range" min="0" max="4" onChange={onChange} value={vagas.objetivo4} />
-                    <h4 id="vigilante">Vigilante</h4>
+                        <h4 id="impulsivo">Impulsivo</h4>
+                        <input name='objetivo4' className="slider1" id="campo" type="range" min="0" max="4" onChange={handleObjetivo4Change} value={state.objetivo4} />
+                        <h4 id="vigilante">Vigilante</h4>
 
-                </div>
+                    </div>
 
-                <div className="actions">
-                    <Link className="buttoncancelar" to={('/vagas')}>Cancelar</Link>
-                    <button className="buttonsalvar">Proxima Etapa</button>
-                </div>
-            </form >
-        </div >
+                    <div className="actions">
+                        <Link className="buttoncancelar" to={('/createvagas')}>Voltar</Link>
+                        <button className="buttonsalvar" onClick={handleNextStep}>Proxima Etapa</button>
+                    </div>
+                </form >
+            </div >
+        </FormProvider>
     );
 }

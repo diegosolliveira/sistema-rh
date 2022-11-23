@@ -45,7 +45,6 @@ export default function Vagas() {
                                 <td>{vaga.titulo}</td>
                                 <td>{vaga.descricao}</td>
                                 
-                                
                                 <td><Link className="buttoneditar" to={('/revisarcandidatos')}>Visualizar</Link></td>
                                 <td><button className="buttoneditar" onClick={() => handleDelete(vaga.id)} type="submit">Deletar</button></td>
 

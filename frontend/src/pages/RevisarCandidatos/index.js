@@ -8,7 +8,6 @@ export default function Candidatos() {
 
     const { id } = useParams();
     const navigate = useNavigate();
-
     const initCandidato = {
         name: '',
         contato: '',
@@ -47,15 +46,20 @@ export default function Candidatos() {
     function onSubmit(ev) {
         ev.preventDefault();
         const method = id ? 'put' : 'post';
-        const url = id
-            ? `/revisarcandidatos/${id}`
-            : '/revisarcandidatos';
-
+        const url = id ? `/candidatos/${id}` : '/candidatos'
+            
         api[method](url, candidato).then((response) => {
-            navigate('/candidatos')
+            navigate('/revisarcandidatos')
+            window.location.reload(false);
         })
     }
 
+    function onChange(ev){
+        setCandidato({
+            status: 'Feito'
+        })
+    }
+   
     return (
         <div className="vaga-container">
             <Menu />
@@ -72,7 +76,6 @@ export default function Candidatos() {
                                 <input className="slider2" id="campo2" type="range" min="0" max="4" value={vaga.objetivo2} />
                                 <input className="slider2" id="campo2" type="range" min="0" max="4" value={vaga.objetivo3} />
                                 <input className="slider2" id="campo2" type="range" min="0" max="4" value={vaga.objetivo4} />
-
                             </div>
                         </p>
                     ))}
@@ -128,9 +131,8 @@ export default function Candidatos() {
                                 <td>{candidato.afinidade}</td>
                                 <td>{candidato.nota}</td>
 
-                                <td><Link name='status' type="Finalizar" className="buttoneditar" to={`/candidatos/${candidato.id}`}>Sim</Link></td>
+                                <td><button className="buttoneditar" type='Finalizar' to={`/revisarcandidatos/${candidato.id}`} onClick={onChange}>Sim</button></td>
                                 <td><Link className="buttoneditar" to={`/candidatos/${candidato.id}`}>Visualizar</Link></td>
-
                             </tr>
                         ))}
                     </tbody>

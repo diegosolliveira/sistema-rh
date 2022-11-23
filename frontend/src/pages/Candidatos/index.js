@@ -59,11 +59,6 @@ export default function Candidatos() {
         }
     }
 
-    function onChange(ev) {
-        const { name, value } = ev.target;
-        setCandidato({ ...candidato, [name]: value })
-    }
-
     return (
         <div className="vaga-container">
             <Menu />

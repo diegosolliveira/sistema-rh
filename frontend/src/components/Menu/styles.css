@@ -44,20 +44,6 @@ h5{
     letter-spacing: 0.5px;
 }
 
-#usuarionome{
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.555);
-    margin-left: 25%;
-    margin-top: -25%;
-    margin-bottom: 26%;
-}
-
-#usuario{
-    margin-left: 25%;
-    margin-top: -25%;
-    margin-bottom: 26%;
-}
-
 .overview{
     height: 5.6%;
     width: 370px;
@@ -327,10 +313,24 @@ h5{
     margin-bottom: 3.5rem;
 }
 
+#usuarionome{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.555);
+    margin-left: 25%;
+    margin-top: -10%;
+    margin-bottom: 0%;
+}
+
+#usuario{
+    margin-left: 25%;
+    margin-top: 0%;
+    margin-bottom: -13%;
+}
+
 .perfil{
     height: 7%;
     width: 370px;
-    display: flex;
+    display: block;
     border: none;
     align-items: center;
     padding-left: 10%;
@@ -338,8 +338,9 @@ h5{
     font-size: 17px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.7);
-    margin-top: -0.5rem;
+    margin-top: 2.5rem;
     margin-left: -2%;
+    margin-bottom: 11.2%;
     letter-spacing: 0.5px;
     text-decoration: none;
 }
@@ -352,12 +353,6 @@ h5{
     justify-content: center;
     display: flex;
     padding-right: 0.5rem;
-}
-
-.perfil:hover{
-    transition: .25s;
-    border: none;
-    margin-left: -4px;
 }
 
 .sair{
@@ -392,12 +387,13 @@ h5{
 .sair:hover{
     background: rgba(231, 231, 231, 0.918);
     color: #774dd0;
+    margin-left: 1.2rem;
     transition: .25s;
 }
 
 
 hr {
-    width: 270px;
+    width: 308px;
     height: 0px;
     margin-top: 21.5px;
 }
